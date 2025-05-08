@@ -1,12 +1,46 @@
-# React + Vite
+# 🧠 CNN-Based Microscopic Cell Image Classifier – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is the frontend interface for an automated classification system that uses a Convolutional Neural Network (CNN) to analyze microscopic cell images for cancer diagnosis.
 
-Currently, two official plugins are available:
+Users can upload an image of a cell through this web interface. The image is then sent to a backend API, where a trained CNN model performs inference and returns the prediction result, which is displayed on the frontend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** – Frontend library for building the UI  
+- **Tailwind CSS** – Utility-first CSS framework for styling  
+- **Axios** – HTTP client to communicate with the backend  
+- **React Router** – For routing between different views/pages
+
+---
+
+## 📸 Functionality
+
+- Upload microscopic cell image
+- Send image to backend CNN model via API
+- Display predicted result on the frontend
+
+---
+## Backend Integration
+The frontend sends uploaded images to a backend API (built with Express.js) that hosts the CNN model. The backend performs image classification and responds with the prediction result, which is then rendered in the frontend UI.
+
+Ensure that the backend server is running and the API endpoint is correctly configured in your frontend code.
+
+## 🛠️ Installation and Running Locally - Frontend(Client-side) repo
+
+Follow these steps to run the frontend locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+
+# 2. Navigate into the project directory
+cd your-repo-name
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+
