@@ -33,10 +33,9 @@ Follow these steps to run the frontend locally:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-
+git clone https://github.com/sandip211fa01046/dignostice-image-classification-client.git
 # 2. Navigate into the project directory
-cd your-repo-name
+cd dignostice-image-classification-client
 
 # 3. Install dependencies
 npm install
